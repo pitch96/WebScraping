@@ -127,7 +127,9 @@
               alert("successfully scraped")
             },
             error: function(xhr, status, error){
-              alert("Please enter correctly")
+              $("#loader").hide();
+              alert("Please enter correctly");
+              window.location.reload();
             }
           })
         });
